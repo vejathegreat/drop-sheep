@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		A3E2E2F12444FC4A00FB49E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2E2F02444FC4A00FB49E7 /* AppDelegate.swift */; };
 		A3E2E2F32444FC4A00FB49E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2E2F22444FC4A00FB49E7 /* SceneDelegate.swift */; };
-		A3E2E2F52444FC4A00FB49E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2E2F42444FC4A00FB49E7 /* ViewController.swift */; };
+		A3E2E2F52444FC4A00FB49E7 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2E2F42444FC4A00FB49E7 /* CategoriesVC.swift */; };
 		A3E2E2F82444FC4A00FB49E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3E2E2F62444FC4A00FB49E7 /* Main.storyboard */; };
 		A3E2E2FA2444FC4E00FB49E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E2E2F92444FC4E00FB49E7 /* Assets.xcassets */; };
 		A3E2E2FD2444FC4E00FB49E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3E2E2FB2444FC4E00FB49E7 /* LaunchScreen.storyboard */; };
 		A3E2E3082444FC4E00FB49E7 /* drop_sheepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2E3072444FC4E00FB49E7 /* drop_sheepTests.swift */; };
 		A3E2E3132444FC4E00FB49E7 /* drop_sheepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2E3122444FC4E00FB49E7 /* drop_sheepUITests.swift */; };
+		A3E2E3242445899200FB49E7 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2E3232445899200FB49E7 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 		A3E2E2ED2444FC4A00FB49E7 /* drop-sheep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "drop-sheep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E2E2F02444FC4A00FB49E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3E2E2F22444FC4A00FB49E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A3E2E2F42444FC4A00FB49E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3E2E2F42444FC4A00FB49E7 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		A3E2E2F72444FC4A00FB49E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3E2E2F92444FC4E00FB49E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3E2E2FC2444FC4E00FB49E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		A3E2E30E2444FC4E00FB49E7 /* drop-sheepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "drop-sheepUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E2E3122444FC4E00FB49E7 /* drop_sheepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drop_sheepUITests.swift; sourceTree = "<group>"; };
 		A3E2E3142444FC4E00FB49E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3E2E3232445899200FB49E7 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,11 @@
 		A3E2E2EF2444FC4A00FB49E7 /* drop-sheep */ = {
 			isa = PBXGroup;
 			children = (
+				A3E2E322244588D800FB49E7 /* models */,
+				A3E2E321244588B700FB49E7 /* views */,
+				A3E2E320244588A900FB49E7 /* controller */,
 				A3E2E2F02444FC4A00FB49E7 /* AppDelegate.swift */,
 				A3E2E2F22444FC4A00FB49E7 /* SceneDelegate.swift */,
-				A3E2E2F42444FC4A00FB49E7 /* ViewController.swift */,
 				A3E2E2F62444FC4A00FB49E7 /* Main.storyboard */,
 				A3E2E2F92444FC4E00FB49E7 /* Assets.xcassets */,
 				A3E2E2FB2444FC4E00FB49E7 /* LaunchScreen.storyboard */,
@@ -126,6 +130,29 @@
 				A3E2E3142444FC4E00FB49E7 /* Info.plist */,
 			);
 			path = "drop-sheepUITests";
+			sourceTree = "<group>";
+		};
+		A3E2E320244588A900FB49E7 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3E2E2F42444FC4A00FB49E7 /* CategoriesVC.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		A3E2E321244588B700FB49E7 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A3E2E3232445899200FB49E7 /* CategoryCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A3E2E322244588D800FB49E7 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3E2E2F52444FC4A00FB49E7 /* ViewController.swift in Sources */,
+				A3E2E2F52444FC4A00FB49E7 /* CategoriesVC.swift in Sources */,
 				A3E2E2F12444FC4A00FB49E7 /* AppDelegate.swift in Sources */,
 				A3E2E2F32444FC4A00FB49E7 /* SceneDelegate.swift in Sources */,
+				A3E2E3242445899200FB49E7 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
