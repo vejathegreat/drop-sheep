@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3D56E0B24462D2D00A4F11E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D56E0A24462D2D00A4F11E /* Category.swift */; };
+		A3D56E0F24462F5600A4F11E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D56E0E24462F5600A4F11E /* DataService.swift */; };
 		A3E2E2F12444FC4A00FB49E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2E2F02444FC4A00FB49E7 /* AppDelegate.swift */; };
 		A3E2E2F32444FC4A00FB49E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2E2F22444FC4A00FB49E7 /* SceneDelegate.swift */; };
 		A3E2E2F52444FC4A00FB49E7 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2E2F42444FC4A00FB49E7 /* CategoriesVC.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3D56E0A24462D2D00A4F11E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A3D56E0E24462F5600A4F11E /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		A3E2E2ED2444FC4A00FB49E7 /* drop-sheep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "drop-sheep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E2E2F02444FC4A00FB49E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3E2E2F22444FC4A00FB49E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3D56E0D24462F3500A4F11E /* services */ = {
+			isa = PBXGroup;
+			children = (
+				A3D56E0E24462F5600A4F11E /* DataService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
 		A3E2E2E42444FC4A00FB49E7 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,7 @@
 		A3E2E2EF2444FC4A00FB49E7 /* drop-sheep */ = {
 			isa = PBXGroup;
 			children = (
+				A3D56E0D24462F3500A4F11E /* services */,
 				A3E2E322244588D800FB49E7 /* models */,
 				A3E2E321244588B700FB49E7 /* views */,
 				A3E2E320244588A900FB49E7 /* controller */,
@@ -151,6 +164,7 @@
 		A3E2E322244588D800FB49E7 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				A3D56E0A24462D2D00A4F11E /* Category.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -287,7 +301,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3E2E2F52444FC4A00FB49E7 /* CategoriesVC.swift in Sources */,
+				A3D56E0B24462D2D00A4F11E /* Category.swift in Sources */,
 				A3E2E2F12444FC4A00FB49E7 /* AppDelegate.swift in Sources */,
+				A3D56E0F24462F5600A4F11E /* DataService.swift in Sources */,
 				A3E2E2F32444FC4A00FB49E7 /* SceneDelegate.swift in Sources */,
 				A3E2E3242445899200FB49E7 /* CategoryCell.swift in Sources */,
 			);
